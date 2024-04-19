@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=B612+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+    font-family: "Archivo Black", sans-serif;
+    color: #78A083;
+    margin: 0px;
+    background-color: #35374B;
+}
+
+.navigation {
+    position: sticky;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.3em;
+    background-color: #35374B;
+    border-width: 0px 0px 1px 0px;
+    border-style: solid;
+}
+
+.nav-title {
+    margin: 30px 50px;
+}
+
+.nav-title:hover {
+    cursor: default;
+}
+
+.nav-items {
+    display: flex;
+    margin: 30px 50px;
+}
+
+.nav-items a {
+    text-decoration: none;
+    color: #78A083;
+    margin: 10px;
+}
+
+.nav-items a:hover {
+    color: #50727B;
+}
+
+article {
+
+}
+
+.beranda {
+    margin: 30px 50px;
+}
+
+.beranda h1 {
+    font-family: "B162 Mono", monospace;
+    font-size: 15px;
+}
+
+.beranda span {
+    font-family: "B162 Mono", monospace;
+    font-size: 30px;
+}
+
