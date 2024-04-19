@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=B612+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
-    font-family: "Archivo Black", sans-serif;
+    font-family: "Montserrat", sans-serif;
     color: #78A083;
     margin: 0px;
     background-color: #35374B;
@@ -26,8 +26,18 @@ nav {
     margin: 30px 50px;
 }
 
-.nav-title:hover {
+.nav-title a {
+    font-family: "Archivo Black", sans-serif;
+    text-decoration: none;
+    color: #78A083;
+}
+
+.nav-title a:hover {
     cursor: default;
+}
+
+.nav-title a:hover {
+    color: #50727B;
 }
 
 .nav-items {
@@ -36,6 +46,7 @@ nav {
 }
 
 .nav-items a {
+    font-family: "Archivo Black", sans-serif;
     text-decoration: none;
     color: #78A083;
     margin: 10px;
@@ -45,21 +56,43 @@ nav {
     color: #50727B;
 }
 
-article {
-
-}
-
-.beranda {
+.home {
     margin: 30px 50px;
 }
 
-.beranda h1 {
-    font-family: "B162 Mono", monospace;
+.home h2 {
+    font-family: "Archivo Black", sans-serif;
     font-size: 15px;
 }
 
-.beranda span {
-    font-family: "B162 Mono", monospace;
+.home h1 {
+    font-family: "Archivo Black", sans-serif;
     font-size: 30px;
 }
 
+.home span {
+    
+}
+
+.contact-content {
+    margin : 30px 50px;
+    border-width: 0px 0px 1px 0px;
+    border-style: solid;
+}
+
+.contact-content h2 {
+    font-family: "Archivo Black", sans-serif;
+}
+
+.fab {
+    width: 30px;
+    font-size: 25px;
+    margin: 10px 0px;
+    text-align: center;
+    text-decoration: none;
+    color: #78A083;
+}
+
+.fab:hover {
+    color: #50727B;
+}
