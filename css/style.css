@@ -1,25 +1,25 @@
-@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fustat:wght@200..800&display=swap");
 
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
-  color: #78a083;
+  font-family: "Fustat", sans-serif;
+  font-weight: 400;
+  color: #d6e0ff;
   margin: 10px 50px;
-  background-color: #35374b;
+  background-color: #1f2334;
 }
 
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #35374b;
+  background-color: #1f2334;
   position: sticky;
   top: 0px;
-  border-bottom: 1px solid;
-  padding: 20px 10px 20px 15px;
+  padding: 20px;
 }
 
 nav {
@@ -28,56 +28,58 @@ nav {
 }
 
 .nav-title a {
-  font-family: "Archivo Black", sans-serif;
+  font-weight: 800;
   text-decoration: none;
-  color: #78a083;
+  color: #d6e0ff;
   font-size: 1.3em;
 }
 
 .nav-title a:hover {
   cursor: default;
-  color: #50727b;
+  color: #9eafff;
 }
 
 .nav-items {
   display: flex;
   padding: 0px 20px 0px 20px;
-  font-family: "Archivo Black", sans-serif;
+  font-weight: 800;
   text-decoration: none;
-  color: #78a083;
+  color: #d6e0ff;
 }
 
 .nav-items:hover {
-  color: #50727b;
+  color: #9eafff;
 }
 
 .home {
   padding: 20px 10px 20px 15px;
 }
 
-.home h2 {
-  font-family: "Archivo Black", sans-serif;
-  font-size: 15px;
+.home h1 {
+  font-weight: 800;
+  font-size: 3em;
+  margin: 0 auto;
 }
 
-.home h1 {
-  font-family: "Archivo Black", sans-serif;
-  font-size: 30px;
+.home h2 {
+  font-weight: 800;
+  font-size: 2em;
 }
 
 .home span {
-  font-size: 15px;
+  font-size: 1em;
+  color: #9eafff;
 }
 
-.work {
+.project {
   margin: 500px 50px;
 }
 
-.work h1 {
+.project h1 {
   text-align: center;
 }
 
-.work h2 {
+.project h2 {
   text-align: center;
 }
 
@@ -87,9 +89,15 @@ nav {
   border-style: solid;
 }
 
+.contact span {
+  font-size: 1em;
+  color: #9eafff;
+}
+
 .contact h1 {
-  font-family: "Archivo Black", sans-serif;
+  font-weight: 800;
   margin: 0px;
+  font-size: 3em;
 }
 
 .fab {
@@ -98,11 +106,17 @@ nav {
   margin: 20px 0px 10px 0px;
   text-align: center;
   text-decoration: none;
-  color: #78a083;
+  color: #d6e0ff;
 }
 
 .fab:hover {
-  color: #50727b;
+  color: #9eafff;
+}
+
+footer {
+  color: #9eafff;
+  padding: 20px 10px 20px 15px;
+  text-align: right;
 }
 
 .loader-container {
@@ -110,7 +124,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 20vh;
+  height: 10vh;
   z-index: -1;
 }
 
@@ -123,7 +137,7 @@ nav {
 .dot {
   width: 15px;
   height: 15px;
-  background-color: #78a083;
+  background-color: #d6e0ff;
   border-radius: 50%;
   animation: bounce 1.5s infinite;
 }
@@ -166,12 +180,12 @@ nav {
 
   .home h1 {
     text-align: center;
-    font-size: 1em;
+    font-size: 3em;
   }
 
   .home h2 {
     text-align: center;
-    font-size: 3em;
+    font-size: 1.5em;
   }
 
   .home span {
@@ -181,11 +195,11 @@ nav {
     font-size: 1em;
   }
 
-  .work h1 {
+  .project h1 {
     font-size: 1.5em;
   }
 
-  .work h2 {
+  .project h2 {
     font-size: 1em;
   }
 
@@ -206,7 +220,8 @@ nav {
     font-size: 2em;
   }
 
-  .loader-container {
-    height: 10vh;
+  footer {
+    text-align: center;
+    font-size: 0.5em;
   }
 }
