@@ -8,7 +8,7 @@ body {
   font-family: "Fustat", sans-serif;
   font-weight: 400;
   color: #d6e0ff;
-  margin: 10px 50px;
+  margin: 0px 50px;
   background-color: #1f2334;
 }
 
@@ -20,6 +20,7 @@ body {
   position: sticky;
   top: 0px;
   padding: 20px;
+  z-index: 1;
 }
 
 nav {
@@ -51,14 +52,14 @@ nav {
   color: #9eafff;
 }
 
-.home {
-  padding: 20px 10px 20px 15px;
-}
-
-.home h1 {
+h1 {
   font-weight: 800;
   font-size: 3em;
   margin: 0 auto;
+}
+
+.home {
+  padding: 150px 10px 150px 15px;
 }
 
 .home h2 {
@@ -72,21 +73,64 @@ nav {
 }
 
 .project {
-  margin: 500px 50px;
+  padding: 150px 10px 150px 15px;
 }
 
 .project h1 {
-  text-align: center;
+  margin-bottom: 50px;
 }
 
-.project h2 {
-  text-align: center;
+.project-content h3 {
+  font-weight: 800;
+  font-size: 1.5em;
+  margin: 10px 0px 10px 0px;
+}
+
+.project-content span {
+  font-size: 1em;
+  color: #9eafff;
+}
+
+.project-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project-item {
+  margin-right: 100px;
+  margin-bottom: 50px;
+}
+
+.project-title {
+  max-width: 300px;
+}
+
+.skills {
+  padding: 150px 10px 150px 15px;
+}
+
+.project-header img {
+  width: 266px;
+  height: 200px;
+  border: 2px solid #d6e0ff;
+  object-fit: contain;
+  border-radius: 10px;
+  opacity: 0.6;
+  transition: ease 0.5s;
+}
+
+.project-header img:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+.experience {
+  padding: 150px 10px 150px 15px;
 }
 
 .contact {
   padding: 20px 10px 20px 15px;
-  border-width: 0px 0px 1px 0px;
-  border-style: solid;
+  border-bottom: #3b47a1 solid 1px;
 }
 
 .contact span {
@@ -117,6 +161,17 @@ footer {
   color: #9eafff;
   padding: 20px 10px 20px 15px;
   text-align: right;
+}
+
+.coming-soon {
+  padding-top: 200px;
+  padding-bottom: 250px;
+}
+
+.coming-soon h1,
+.coming-soon h2 {
+  text-align: center;
+  font-size: 1.5em;
 }
 
 .loader-container {
