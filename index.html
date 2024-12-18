@@ -15,7 +15,7 @@
 <body>
   <header class="header">
     <div class="nav-title">
-      <a href index.html>Andreas Calvin</a>
+      <a href="#home">Andreas Calvin</a>
     </div>
     <nav>
       <a href="#project" class="nav-items">Project</a>
@@ -23,7 +23,29 @@
       <a href="#skills" class="nav-items">Skills</a>
       <a href="#contact" class="nav-items">Contact</a>
     </nav>
+    <div class="navbar-icon" onclick="openNavMobile()">
+      <p class="fa fa-bars"></p>
+    </div>
   </header>
+
+  <div class="nav-mobile">
+    <div class="close-icon" onclick="closeNavMobile()">
+      <i class="fa-solid fa-x"></i>
+    </div>
+    <div class="nav-mobile-item">
+      <a href="#project" class="nav-items" onclick="closeNavMobile()"
+        >Project</a
+      >
+      <a href="#experience" class="nav-items" onclick="closeNavMobile()"
+        >Experience</a
+      >
+      <a href="#skills" class="nav-items" onclick="closeNavMobile()">Skills</a>
+      <a href="#contact" class="nav-items" onclick="closeNavMobile()"
+        >Contact</a
+      >
+    </div>
+  </div>
+
   <main>
     <section id="home" class="home">
       <h1>Hey!</h1>
@@ -38,6 +60,7 @@
         now is Java.
       </span>
     </section>
+
     <section id="project" class="project">
       <h1>Project</h1>
       <div class="project-content">
@@ -65,7 +88,7 @@
             ><img src="/asset/dicoding.png" alt=""
           /></a>
           <div class="project-title">
-            <h3>Japasa</h3>
+            <h3>JapaSa</h3>
             <span
               >A simple website use HTML, CSS and JavaScript for Dicoding Front
               End Developer task project</span
@@ -94,7 +117,7 @@
             class="project-header"
             href="https://andreasc21.github.io/random-waifu-image-generator/"
             target="_blank"
-            ><img src="/asset/random.png" alt=""
+            ><img src="/asset/random.png" alt="random waifu"
           /></a>
           <div class="project-title">
             <h3>Random Waifu Image Generator</h3>
@@ -104,40 +127,107 @@
             >
           </div>
         </div>
+
         <div class="project-item">
           <a class="project-header" target="_blank"
-            ><img src="/asset/phoning.png" alt=""
+            ><img src="/asset/phoning.png" alt="phoning"
           /></a>
           <div class="project-title">
             <h3>Phoning</h3>
             <span
               >A marketplace smartphone website use HTML, CSS, JavaScript,
-              Bootstrap, Node.js Express. This is a group web programming final
-              project and I'm working on the backend and database using node.js
-              Express and MySQL.</span
+              Bootstrap, Node.js (Express). This is a group web programming
+              final project and I'm working on the backend and database using
+              Node.js (Express) and MySQL.</span
             >
           </div>
         </div>
       </div>
     </section>
-    <section class="coming-soon">
-      <h1>Work in progress</h1>
-      <h2>Something good will coming ASAP! :)</h2>
-      <h1>Stay tune!</h1>
-      <div class="loader-container">
-        <div class="bouncing-dots">
-          <div class="dot"></div>
-          <div class="dot"></div>
-          <div class="dot"></div>
+
+    <section id="experience" class="experience">
+      <h1>Experience</h1>
+      <h2>2024</h2>
+      <div class="exp-content">
+        <h3>Staff of Science Development</h3>
+        <span>Himpunan Mahasiswa Informatika - Universitas Sriwijaya</span>
+      </div>
+    </section>
+
+    <section id="skills" class="skills">
+      <h1>Skills</h1>
+      <div class="skill-content">
+        <div class="skill-item">
+          <div class="skill-logo">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/768px-HTML5_Badge.svg.png?20110131171049"
+              alt=""
+            />
+          </div>
+          <span>HTML</span>
+        </div>
+        <div class="skill-item">
+          <div class="skill-logo">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/768px-CSS3_logo.svg.png?20210705212817"
+              alt=""
+            />
+          </div>
+          <span>CSS</span>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-logo">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+              alt=""
+            />
+          </div>
+          <span>JavaScript</span>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-logo">
+            <img
+              src="https://git-scm.com/images/logos/downloads/Git-Icon-Black.png"
+              alt=""
+            />
+          </div>
+          <span>Git</span>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-logo">
+            <img
+              src="https://wallpapers.com/images/high/java-programming-language-logo-transparent-k6ngrbl1m2xbzz4t-k6ngrbl1m2xbzz4t.png"
+              alt=""
+            />
+          </div>
+          <span>Java</span>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-logo">
+            <img
+              src="https://nodejs.org/static/logos/nodejsStackedDark.svg"
+              alt=""
+            />
+          </div>
+          <span>Node.js</span>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-logo">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Figma-logo.svg/600px-Figma-logo.svg.png"
+              alt=""
+            />
+          </div>
+          <span>Figma</span>
         </div>
       </div>
     </section>
-    <!-- <section id="experience" class="experience">
-      <h1>Experience</h1>
-    </section>
-    <section id="skills" class="skills">
-      <h1>Skills</h1>
-    </section> -->
+
     <section id="contact" class="contact">
       <h1>Contact me!</h1>
       <span>If you interested to talk with me!</span>
@@ -159,4 +249,5 @@
     </section>
     <footer>©Copyright 2024. Andreas Calvin</footer>
   </main>
+  <script src="/js/script.js"></script>
 </body>

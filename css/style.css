@@ -1,7 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Fustat:wght@200..800&display=swap");
 
-html {
+* {
   scroll-behavior: smooth;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 
 body {
@@ -17,10 +35,12 @@ body {
   align-items: center;
   justify-content: space-between;
   background-color: #1f2334;
-  position: sticky;
-  top: 0px;
-  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px 65px;
   z-index: 1;
+  width: 100%;
 }
 
 nav {
@@ -50,6 +70,32 @@ nav {
 
 .nav-items:hover {
   color: #9eafff;
+}
+
+.navbar-icon {
+  display: none;
+}
+
+.nav-mobile {
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  z-index: 1;
+  padding-top: 30px;
+  background-color: #1f2334;
+  width: 50%;
+  height: 100%;
+  right: 0;
+}
+
+.close-icon i {
+  position: fixed;
+  right: 0;
+  padding-right: 70px;
+}
+
+.nav-mobile-item {
+  padding-top: 50px;
 }
 
 h1 {
@@ -105,10 +151,6 @@ h1 {
   max-width: 300px;
 }
 
-.skills {
-  padding: 150px 10px 150px 15px;
-}
-
 .project-header img {
   width: 266px;
   height: 200px;
@@ -126,6 +168,46 @@ h1 {
 
 .experience {
   padding: 150px 10px 150px 15px;
+}
+
+.exp-content h3 {
+  margin: 0 auto;
+}
+
+.exp-content span {
+  color: #9eafff;
+}
+
+.skills {
+  padding: 150px 10px 150px 15px;
+}
+
+.skill-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skill-item {
+  text-align: center;
+  margin-right: 20px;
+}
+
+.skill-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d6e0ff;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.skill-logo img {
+  width: 50%;
+  height: 50%;
+  object-fit: contain;
 }
 
 .contact {
@@ -163,103 +245,41 @@ footer {
   text-align: right;
 }
 
-.coming-soon {
-  padding-top: 200px;
-  padding-bottom: 250px;
-}
-
-.coming-soon h1,
-.coming-soon h2 {
-  text-align: center;
-  font-size: 1.5em;
-}
-
-.loader-container {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 10vh;
-  z-index: -1;
-}
-
-.bouncing-dots {
-  display: flex;
-  justify-content: space-between;
-  width: 60px;
-}
-
-.dot {
-  width: 15px;
-  height: 15px;
-  background-color: #d6e0ff;
-  border-radius: 50%;
-  animation: bounce 1.5s infinite;
-}
-
-.dot:nth-child(1) {
-  animation-delay: 0s;
-}
-
-.dot:nth-child(2) {
-  animation-delay: 0.3s;
-}
-
-.dot:nth-child(3) {
-  animation-delay: 0.6s;
-}
-
-@keyframes bounce {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-20px);
-  }
-}
-
 @media only screen and (max-width: 600px) {
-  header {
+  .header {
     justify-content: center;
+    width: 100%;
   }
 
   .nav-title {
     flex: 1;
-    text-align: center;
   }
 
   nav {
     display: none;
   }
 
+  .navbar-icon {
+    display: inline;
+  }
+
   .home h1 {
-    text-align: center;
     font-size: 3em;
   }
 
   .home h2 {
-    text-align: center;
     font-size: 1.5em;
   }
 
   .home span {
     display: inline-block;
-    text-align: center;
+
     margin: 0 auto;
     font-size: 1em;
   }
 
-  .project h1 {
-    font-size: 1.5em;
-  }
-
   .project h2 {
     font-size: 1em;
-  }
-
-  .contact {
-    text-align: center;
   }
 
   .contact h1 {
