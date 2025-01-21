@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Fustat:wght@200..800&display=swap");
+
+* {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Fustat", sans-serif;
+  font-weight: 400;
+  color: #d6e0ff;
+  margin: 0px 50px;
+  background-color: #1f2334;
+}
+
+a {
+  text-decoration: none;
+  color: #9eafff;
+  font-weight: 800;
+  transition: 0.5s ease;
+}
+
+a:hover {
+  color: #3b47a1;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 3em;
+  margin: 0 auto;
+}
+
+.home {
+  padding: 150px 10px 300px 15px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards;
+}
+
+.home h2 {
+  font-weight: 800;
+  font-size: 2em;
+}
+
+.home span {
+  font-size: 1em;
+  color: #9eafff;
+}
+
+footer {
+  color: #9eafff;
+  padding: 20px 10px 20px 15px;
+  text-align: right;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .home h1 {
+    font-size: 3em;
+  }
+
+  .home h2 {
+    font-size: 1.5em;
+  }
+
+  .home span {
+    display: inline-block;
+    margin: 0 auto;
+    font-size: 1em;
+  }
+
+  footer {
+    text-align: center;
+    font-size: 0.5em;
+  }
+}
