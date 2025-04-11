@@ -1,32 +1,225 @@
 <!DOCTYPE html>
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AndreasC - WIP</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
-  <link rel="icon" href="asset/logo.png" type="image/icon type" />
-</head>
-<body>
-  <main>
-    <section id="home" class="home">
-      <h1>Work in progress :)</h1>
-      <h3>I'm sorry, but i have to improve my website!</h3>
-      <span
-        >Check
-        <a href="https://andreasc21.github.io/old-portfolio" target="_blank"
-          >my previous portfolio</a
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="nav">
+      <nav id="title">
+        <a href="#home">Andreas Calvin</a>
+      </nav>
+      <nav id="shortcut">
+        <a href="#about">About</a>
+        <a href="#project">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <nav id="social">
+        <a
+          href="http://github.com/AndreasC21"
+          class="fab fa-github"
+          target="_blank"
+        ></a>
+        <a
+          href="http://linkedin.com/in/andreascalvin"
+          class="fab fa-linkedin"
+          target="_blank"
+        ></a>
+      </nav>
+      <nav id="mobile">
+        <div class="navbar-icon" onclick="openNavMobile()">
+          <p class="fa fa-bars"></p>
+        </div>
+      </nav>
+    </header>
+    <header class="nav-mobile">
+      <div class="close-icon" onclick="closeNavMobile()">
+        <i class="fa-solid fa-x"></i>
+      </div>
+      <div class="nav-mobile-item">
+        <a href="#about" class="nav-items" onclick="closeNavMobile()">About</a>
+        <a href="#project" class="nav-items" onclick="closeNavMobile()"
+          >Projects</a
         >
-        if you want to see my work! (for now hehe)</span
-      >
-    </section>
 
-    <footer>©Copyright 2025. AndreasC</footer>
-  </main>
-</body>
+        <a href="#contact" class="nav-items" onclick="closeNavMobile()"
+          >Contact</a
+        >
+        <i class="fa-solid fa-moon dark" onclick="darkMode()"></i>
+        <i
+          class="fa-regular fa-sun light"
+          onclick="lightMode()"
+          style="display: none"
+        ></i>
+      </div>
+    </header>
+    <main>
+      <div class="wrapper" id="wrapper">
+        <section class="content" id="home">
+          <section class="title">
+            <h1>Hi everyone!</h1>
+            <p>Meet the ordinary developer here xD</p>
+          </section>
+          <figure class="picture">
+            <img src="asset/profile.png" alt="profile" class="profile" />
+          </figure>
+          <span class="caption" id="explore">
+            Scroll to explore
+            <i class="fa-solid fa-arrow-down"></i>
+          </span>
+        </section>
+        <section class="content" id="about">
+          <h2>Hello, my name is Andreas Calvin</h2>
+          <p>
+            I am an ordinary developer who is still learning in the programming
+            industry. For now, I have learned about Java, HTML, CSS, JavaScript,
+            Node.js
+          </p>
+          <span class="caption" id="seeproject">
+            Explore my projects now
+            <i class="fa-solid fa-arrow-down"></i>
+          </span>
+        </section>
+
+        <section class="content" id="project">
+          <h2>Check out my projects!</h2>
+          <div class="project-container">
+            <input type="radio" name="project" id="s1" checked />
+            <label for="s1" class="img">
+              <div class="project-item">
+                <div class="desc">
+                  <a href="https://phoning.vercel.app" target="_blank">
+                    <p>Phoning</p>
+                    <span>A simple marketplace smartphone website</span>
+                  </a>
+                </div>
+              </div>
+            </label>
+
+            <input type="radio" name="project" id="s2" />
+            <label for="s2" class="img">
+              <div class="project-item">
+                <div class="desc">
+                  <a
+                    href="https://andreasc21.github.io/random-waifu-image-generator/"
+                    target="_blank"
+                  >
+                    <p>Penghasil Waifu</p>
+                    <span
+                      >A simple website for generate random girl anime
+                      images.</span
+                    >
+                  </a>
+                </div>
+              </div>
+            </label>
+
+            <input type="radio" name="project" id="s3" />
+            <label for="s3" class="img">
+              <div class="project-item">
+                <div class="desc">
+                  <a
+                    href="http://revou-fundamental-course.github.io/18-sep-23-AndreasC21/"
+                    target="_blank"
+                  >
+                    <p>E-Grocery</p>
+                    <span>A simple website for RevoU Fundamental Course. </span>
+                  </a>
+                </div>
+              </div>
+            </label>
+
+            <input type="radio" name="project" id="s4" />
+            <label for="s4" class="img">
+              <div class="project-item">
+                <div class="desc">
+                  <a
+                    href="https://andreasc21.github.io/simple-gallery-web/"
+                    target="_blank"
+                  >
+                    <p>Galeri Kejayaan 2D</p>
+                    <span>A simple gallery website use flexbox.</span>
+                  </a>
+                </div>
+              </div>
+            </label>
+
+            <input type="radio" name="project" id="s5" />
+            <label for="s5" class="img">
+              <div class="project-item">
+                <div class="desc">
+                  <a
+                    href="https://andreasc21.github.io/old-portfolio"
+                    target="_blank"
+                  >
+                    <p>Old Profile Website</p>
+                    <span>My first profile website.</span>
+                  </a>
+                </div>
+              </div>
+            </label>
+          </div>
+          <span class="caption" id="talk">
+            Talk with me now!
+            <i class="fa-solid fa-arrow-down"></i>
+          </span>
+        </section>
+        <section class="content" id="contact">
+          <h1>Want to talk with me?</h1>
+          <p>Visit my social media accounts right now!</p>
+          <div class="contact-container">
+            <div class="contact-item">
+              <a href="https://github.com/AndreasC21" target="_blank"
+                ><i class="fab fa-github"></i><span>AndreasC21</span></a
+              >
+            </div>
+
+            <div class="contact-item">
+              <a href="https://linkedin.com/in/andreascalvin" target="_blank"
+                ><i class="fab fa-linkedin"></i><span>Andreas Calvin</span></a
+              >
+            </div>
+
+            <div class="contact-item">
+              <a href="https://facebook.com/AndreasCalvin21" target="_blank"
+                ><i class="fab fa-facebook"></i><span>Andreas Calvin</span></a
+              >
+            </div>
+
+            <div class="contact-item">
+              <a href="https://instagram.com/andreasc.21" target="_blank"
+                ><i class="fab fa-instagram"></i><span>@andreasc.21</span></a
+              >
+            </div>
+
+            <div class="contact-item">
+              <a
+                href="https://mail.google.com/mail/u/0/?fs=1&to=andreascalvin21@gmail.com&su=Hi!&tf=cm"
+                target="_blank"
+                ><i class="fa-solid fa-envelope"></i
+                ><span>andreascalvin21@gmail.com</span></a
+              >
+            </div>
+          </div>
+        </section>
+        <footer>©Copyright 2025. Andreas Calvin</footer>
+      </div>
+    </main>
+    <script src="/js/script.js"></script>
+  </body>
+</html>
