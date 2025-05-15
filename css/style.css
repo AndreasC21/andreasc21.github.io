@@ -272,7 +272,7 @@ input:checked + label .desc a {
 }
 
 .img[for="s2"] {
-  background-image: url("/asset/random.png");
+  background-image: url("/asset/aitemshop.png");
 }
 
 .img[for="s3"] {
@@ -280,7 +280,7 @@ input:checked + label .desc a {
 }
 
 .img[for="s4"] {
-  background-image: url("/asset/gallery.png");
+  background-image: url("/asset/random.png");
 }
 
 .img[for="s5"] {
